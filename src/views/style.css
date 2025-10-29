@@ -1,0 +1,53 @@
+.style-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.style-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.style-container3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.style-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #41414c;
+}
+ 
+.style-text {
+  color: #ffffff;
+  font-size: 28px;
+}
+ 
+.style-container5 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 32px;
+  flex-direction: column;
+}
+ 
+.style-h1 {
+  font-family: "FagoOfficeSerif-Regular";
+}
+ 
+.style-h53 {
+  font-family: "Open Sans";
+}

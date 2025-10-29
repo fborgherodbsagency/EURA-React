@@ -1,0 +1,71 @@
+.accordion-workshop-container1 {
+  display: contents;
+}
+ 
+.accordion-workshop-accordion-workshop {
+  width: 100%;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  flex-direction: column;
+}
+ 
+.accordion-workshop-trigger {
+  cursor: pointer;
+  padding-top: var(--dl-layout-space-twounits);
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  padding-right: var(--dl-layout-space-unit);
+  padding-bottom: var(--dl-layout-space-twounits);
+  background-color: #ffffff;
+}
+ 
+.accordion-workshop-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.accordion-workshop-container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+.accordion-workshop-text1 {
+  fill: var(--dl-color-theme-primary2);
+  color: var(--dl-color-theme-primary2);
+  font-weight: 700;
+}
+ 
+.accordion-workshop-icon-container {
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.accordion-workshop-container3 {
+  display: flex;
+  padding-top: var(--dl-layout-space-oneandhalfunits);
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  padding-right: var(--dl-layout-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-oneandhalfunits);
+}
+ 
+.accordion-workshop-text3 {
+  display: inline-block;
+}
+ 
+.accordion-workshop-text8 {
+  display: inline-block;
+}
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

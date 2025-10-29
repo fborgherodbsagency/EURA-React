@@ -1,0 +1,17 @@
+.button-stroke-container {
+  display: contents;
+}
+ 
+.button-stroke-button {
+  fill: rgb(59, 58, 67);
+  color: rgb(59, 58, 67);
+  border-color: rgb(59, 58, 67);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: transparent;
+}
+ 
+.button-stroke-text2 {
+  display: inline-block;
+}
+ 
+

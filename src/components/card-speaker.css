@@ -1,0 +1,84 @@
+.card-speaker-image {
+  width: 180px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.card-speaker-container {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.card-speaker-text10 {
+  text-align: center;
+}
+ 
+.card-speaker-text11 {
+  font-size: 20px;
+  text-align: center;
+}
+ 
+.card-speaker-button {
+  width: 0px;
+  height: 0px;
+  display: none;
+  border-radius: var(--dl-layout-radius-buttonradius);
+}
+ 
+.card-speaker-text13 {
+  display: inline-block;
+}
+ 
+.card-speaker-text14 {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+}
+ 
+.card-speaker-text17 {
+  display: inline-block;
+  text-align: center;
+}
+ 
+.card-speakerroot-class-name {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name1 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name3 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name4 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name6 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name7 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name8 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name9 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name10 {
+  flex: 1;
+}
+ 
+.card-speakerroot-class-name11 {
+  flex: 1;
+}
