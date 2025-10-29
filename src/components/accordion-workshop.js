@@ -13,7 +13,7 @@ const AccordionWorkshop = (props) => {
       >
         <details
           data-thq="accordion-trigger"
-          className="accordion-workshop-trigger"
+          className="accordion-workshops-line"
         >
           <summary
             data-thq="accordion-summary"

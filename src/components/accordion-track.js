@@ -6,7 +6,7 @@ import './accordion-track.css'
 
 const AccordionTrack = (props) => {
   return (
-    <div className="accordion-track-container1">
+    <div className="accordion-track-line">
       <div data-thq="accordion" className="accordion-track-accordion-track">
         <details
           data-thq="accordion-trigger"

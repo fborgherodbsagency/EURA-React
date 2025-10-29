@@ -688,6 +688,19 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
  
+.accordion-track-line {
+  display: contents;
+}
+ 
+.accordion-workshops-line {
+  cursor: pointer;
+  padding-top: var(--dl-layout-space-twounits);
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  padding-right: var(--dl-layout-space-unit);
+  padding-bottom: var(--dl-layout-space-twounits);
+  background-color: #ffffff;
+}
+ 
 .Content {
   font-size: 16px;
   font-family: Inter;

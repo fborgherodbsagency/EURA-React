@@ -9,15 +9,6 @@
   flex-direction: column;
 }
  
-.accordion-workshop-trigger {
-  cursor: pointer;
-  padding-top: var(--dl-layout-space-twounits);
-  padding-left: var(--dl-layout-space-oneandhalfunits);
-  padding-right: var(--dl-layout-space-unit);
-  padding-bottom: var(--dl-layout-space-twounits);
-  background-color: #ffffff;
-}
- 
 .accordion-workshop-summary {
   display: flex;
   align-items: center;

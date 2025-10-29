@@ -2930,7 +2930,119 @@ const Home = (props) => {
       ></Footer10>
       <div>
         <div className="home-container204">
-          <Script html={``}></Script>
+          <Script
+            html={`<style type="text/css">
+  .home-navbar-interactive {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-navbar-interactive.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .home-navbar-interactive.hidden {
+    transform: translateY(-100%);
+  }
+
+  .home-navbar-interactive.visible {
+    transform: translateY(0);
+  }
+
+  /* Add top padding to body to prevent content jump */
+  body {
+    padding-top: 80px;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+<script>
+  (function() {
+  // Sticky Menu with Animation
+  const navbar = document.querySelector('.home-navbar-interactive');
+  let lastScrollTop = 0;
+  let ticking = false;
+  
+  function updateNavbar() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Add scrolled class when scrolled down more than 50px for styling changes
+    if (scrollTop > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+    
+    // Always keep navbar visible - just update lastScrollTop for future use
+    navbar.classList.remove('hidden');
+    navbar.classList.add('visible');
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    ticking = false;
+  }
+  
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  }
+  
+  // Initialize navbar - make sure it's visible
+  navbar.classList.remove('hidden');
+  navbar.classList.add('visible');
+  
+  // Add scroll event listener
+  window.addEventListener('scroll', onScroll, { passive: true });
+  
+  // Add smooth scroll to navigation links
+  const navLinks = document.querySelectorAll('.home-links1 a[href^="#"]');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        const offsetTop = targetElement.offsetTop - 100; // Account for sticky navbar
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // Add hover effects to menu items
+  const menuItems = document.querySelectorAll('.home-links1 a');
+  menuItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-2px)';
+      this.style.transition = 'transform 0.2s ease';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+    });
+  });
+  
+  console.log('Sticky menu with animation initialized!');
+})();
+</script>`}
+          ></Script>
         </div>
       </div>
     </div>
